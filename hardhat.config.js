@@ -7,12 +7,13 @@ require("@openzeppelin/hardhat-upgrades");
 const { API_URL, PRIVATE_KEY } = process.env;
 
 module.exports = {
-  solidity: "0.8.18",
+  solidity: "0.7.3",
   defaultNetwork: "sepolia",
   networks: {
+    hardhat: {},
     sepolia: {
       url: API_URL,
-      accounts: [PRIVATE_KEY],
+      accounts: [`0x${PRIVATE_KEY}`],
     },
   },
   etherscan: {

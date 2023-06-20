@@ -1,3 +1,9 @@
+await helloWorld.message()
+await helloWorld.update('Goodbye World!')
+await helloWorld.message()
+await helloWorld.sayDetails()
+const helloWorld = await HelloWorld.attach("0x8e320dAbD5D660571C855302F0492AC40a6250d1")
+const HelloWorld = await ethers.getContractFactory("HelloWorld")
 scripts/interact.js
 npx run scripts/interact.js
 npx hardhat run scripts/interact.js

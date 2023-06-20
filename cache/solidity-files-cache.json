@@ -2,11 +2,11 @@
   "_format": "hh-sol-cache-2",
   "files": {
     "/Users/will/work-projects/stabiliti/multi-sig-wallet-poc/contracts/HelloWorld.sol": {
-      "lastModificationDate": 1687259262720,
-      "contentHash": "09bf8652d733d85ee8727c71040b09fe",
+      "lastModificationDate": 1687268738036,
+      "contentHash": "9de718f5dbe9caeeab6638f67d16a843",
       "sourceName": "contracts/HelloWorld.sol",
       "solcConfig": {
-        "version": "0.8.18",
+        "version": "0.7.3",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -31,7 +31,7 @@
       },
       "imports": [],
       "versionPragmas": [
-        ">= 0.8.18"
+        ">= 0.7.3"
       ],
       "artifacts": [
         "HelloWorld"
