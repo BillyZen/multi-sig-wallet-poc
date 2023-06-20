@@ -1,0 +1,7 @@
+1. Set up Alchemy and Sepolia or another way to run a local ethereum node (these 2 techs should make it simpler and avoid having to)
+2. Learn how to deploy a standard wallet/smart contract (alchemy has a good guide for first wallet)
+3. Deploy a multi-sig wallet and demonstrate functionality with 2 or more accounts
+4. Set up a react app to enable someone to interact with the wallet functionality in the browser as well as connect to Metamask
+5. Understand how the functionality can be extended to mints and burns
+6. Add UI/UX to the app
+7. Document all learning and assumptions
