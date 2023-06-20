@@ -1,0 +1,5 @@
+scripts/interact.js
+npx run scripts/interact.js
+npx hardhat run scripts/interact.js
+(await ethers.provider.getBalance(accounts[0])).toString()
+accounts = await ethers.provider.listAccounts()

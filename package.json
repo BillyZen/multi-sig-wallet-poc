@@ -1,0 +1,29 @@
+{
+  "name": "multi-sig-wallet-poc",
+  "version": "1.0.0",
+  "description": "A proof of concept (PoC) that demonstrates a smart contract-based multi-sig. wallet. The PoC runs with a local Ethereum blockchain node. For example, when a token is transferred to the multi-sig. wallet, the token can only be transferred to another account given approval by at least 2 or more signatory accounts. The PoC incorporates a React app where a user can issue a transfer request to the multi-sig. wallet. It can use an Ethereum user wallet (such as MetaMask) for signatory approval transaction signing. On submission of the transfer request, other signatories will receive a request to approve. Approval is performed by sending a signed transaction to the multi-sig contract. On receiving the minimum number of signatory approvals, the transfer request is actioned. The multi-sig. wallet will support NFTs, that is ERC-721 token transfers. The PoC will focus on token transfer actions only however the same approach can likely be extended to support other actions (such as mints and burns) in the future.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BillyZen/multi-sig-wallet-poc.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BillyZen/multi-sig-wallet-poc/issues"
+  },
+  "homepage": "https://github.com/BillyZen/multi-sig-wallet-poc#readme",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.2.3",
+    "@openzeppelin/hardhat-upgrades": "^1.28.0",
+    "ethers": "^5.7.2",
+    "hardhat": "^2.15.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  }
+}
