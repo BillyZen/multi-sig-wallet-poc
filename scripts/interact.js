@@ -6,10 +6,10 @@ const { ethers } = require("hardhat");
 const contract = require("../artifacts/contracts/HelloWorld.sol/HelloWorld.json");
 
 // provider - Alchemy
-const alchemyProvider = new ethers.providers.AlchemyProvider(
-  "sepolia",
-  API_KEY
-);
+const alchemyProvider = new ethers.providers.AlchemyProvider([
+  (network = "sepolia"),
+  API_KEY,
+]);
 
 // signer - you
 const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
@@ -27,7 +27,7 @@ async function main() {
 
   console.log("Updating the message...");
 
-  const tx = await helloWorldContract.update("Goodbye World!");
+  const tx = await helloWorldContract.update("Updated from interact.js!");
   await tx.wait();
 
   const newMessage = await helloWorldContract.message();
