@@ -1,6 +1,6 @@
-1. Set up Alchemy (node runner), hardhat (test suite) and Sepolia (test net) or another way to run a local ethereum node 
-(these techs should make it simpler and avoid having to)
-2. Learn how to deploy a standard wallet/smart contract (alchemy has a good guide for first wallet)
+1. Set up Alchemy (node runner), hardhat (test suite) and Sepolia (test net) or run a local ethereum node 
+(these techs should make it simpler and avoid having to) - DONE
+2. Learn how to deploy/interact with a standard wallet/smart contract - DONE
 3. Deploy a multi-sig wallet and demonstrate functionality with 2 or more accounts
 4. Set up a react app to enable someone to interact with the wallet functionality in the browser as well as connect to Metamask
 5. Understand how the functionality can be extended to mints and burns
