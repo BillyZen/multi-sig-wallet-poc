@@ -1,10 +1,9 @@
-const API_KEY = process.env.API_KEY;
 const PRIVATE_KEY = process.env.PRIVATE_KEY;
-const CONTRACT_ADDRESS = process.env.CONTRACT_ADDRESS;
+const HELLO_WORLD_CONTRACT_ADDRESS = process.env.HELLO_WORLD_CONTRACT_ADDRESS;
 const API_URL = process.env.API_URL;
 
 const { ethers } = require("hardhat");
-const contract = require("../artifacts/contracts/HelloWorld.sol/HelloWorld.json");
+const contract = require("../../artifacts/contracts/HelloWorld.sol/HelloWorld.json");
 
 // provider - Alchemy
 const alchemyProvider = new ethers.providers.JsonRpcProvider(
@@ -17,7 +16,7 @@ const signer = new ethers.Wallet(PRIVATE_KEY, alchemyProvider);
 
 // contract instance
 const helloWorldContract = new ethers.Contract(
-  CONTRACT_ADDRESS,
+  HELLO_WORLD_CONTRACT_ADDRESS,
   contract.abi,
   signer
 );
