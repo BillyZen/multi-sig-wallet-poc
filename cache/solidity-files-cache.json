@@ -36,6 +36,114 @@
       "artifacts": [
         "HelloWorld"
       ]
+    },
+    "/Users/will/work-projects/stabiliti/multi-sig-wallet-poc/contracts/MultiSigWallet.sol": {
+      "lastModificationDate": 1687510425366,
+      "contentHash": "e6204aa1f642c1d9a6ac0249bc3cf7bd",
+      "sourceName": "contracts/MultiSigWallet.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.7.3"
+      ],
+      "artifacts": [
+        "MultiSigWallet"
+      ]
+    },
+    "/Users/will/work-projects/stabiliti/multi-sig-wallet-poc/contracts/TestTransaction.sol": {
+      "lastModificationDate": 1687510802194,
+      "contentHash": "5068c948fa3bc84743cfe988b56a7052",
+      "sourceName": "contracts/TestTransaction.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.7.3"
+      ],
+      "artifacts": [
+        "TestContract"
+      ]
+    },
+    "/Users/will/work-projects/stabiliti/multi-sig-wallet-poc/contracts/Wallet.sol": {
+      "lastModificationDate": 1687511735974,
+      "contentHash": "7f47fe1dc55e7a56c497ac76c9ca67e4",
+      "sourceName": "contracts/Wallet.sol",
+      "solcConfig": {
+        "version": "0.7.3",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">= 0.7.3"
+      ],
+      "artifacts": [
+        "Wallet"
+      ]
     }
   }
 }

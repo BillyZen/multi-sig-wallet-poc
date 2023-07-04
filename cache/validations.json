@@ -2,6 +2,236 @@
   "version": "3.4",
   "log": [
     {
+      "contracts/MultiSigWallet.sol:MultiSigWallet": {
+        "src": "contracts/MultiSigWallet.sol:5",
+        "version": {
+          "withMetadata": "5c309b5b4366b99d1d7ca8eb4cda541ba5d815dff129868898eb623ad8ed779a",
+          "withoutMetadata": "5c309b5b4366b99d1d7ca8eb4cda541ba5d815dff129868898eb623ad8ed779a",
+          "linkedWithoutMetadata": "5c309b5b4366b99d1d7ca8eb4cda541ba5d815dff129868898eb623ad8ed779a"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "(address[],uint256)",
+          "()",
+          "submitTransaction(address,uint256,bytes)",
+          "confirmTransaction(uint256)",
+          "executeTransaction(uint256)",
+          "revokeConfirmation(uint256)",
+          "getOwners()",
+          "getTransactionCount()",
+          "getTransaction(uint256)"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "MultiSigWallet",
+            "src": "contracts/MultiSigWallet.sol:55"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owners",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_array(t_address)dyn_storage",
+              "contract": "MultiSigWallet",
+              "src": "contracts/MultiSigWallet.sol:18"
+            },
+            {
+              "label": "isOwner",
+              "offset": 0,
+              "slot": "1",
+              "type": "t_mapping(t_address,t_bool)",
+              "contract": "MultiSigWallet",
+              "src": "contracts/MultiSigWallet.sol:19"
+            },
+            {
+              "label": "numConfirmationsRequired",
+              "offset": 0,
+              "slot": "2",
+              "type": "t_uint256",
+              "contract": "MultiSigWallet",
+              "src": "contracts/MultiSigWallet.sol:20"
+            },
+            {
+              "label": "isConfirmed",
+              "offset": 0,
+              "slot": "3",
+              "type": "t_mapping(t_uint256,t_mapping(t_address,t_bool))",
+              "contract": "MultiSigWallet",
+              "src": "contracts/MultiSigWallet.sol:31"
+            },
+            {
+              "label": "transactions",
+              "offset": 0,
+              "slot": "4",
+              "type": "t_array(t_struct(Transaction)59_storage)dyn_storage",
+              "contract": "MultiSigWallet",
+              "src": "contracts/MultiSigWallet.sol:33"
+            }
+          ],
+          "types": {
+            "t_address": {
+              "label": "address",
+              "numberOfBytes": "20"
+            },
+            "t_array(t_address)dyn_storage": {
+              "label": "address[]",
+              "numberOfBytes": "32"
+            },
+            "t_array(t_struct(Transaction)59_storage)dyn_storage": {
+              "label": "struct MultiSigWallet.Transaction[]",
+              "numberOfBytes": "32"
+            },
+            "t_bool": {
+              "label": "bool",
+              "numberOfBytes": "1"
+            },
+            "t_bytes_storage": {
+              "label": "bytes",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_address,t_bool)": {
+              "label": "mapping(address => bool)",
+              "numberOfBytes": "32"
+            },
+            "t_mapping(t_uint256,t_mapping(t_address,t_bool))": {
+              "label": "mapping(uint256 => mapping(address => bool))",
+              "numberOfBytes": "32"
+            },
+            "t_struct(Transaction)59_storage": {
+              "label": "struct MultiSigWallet.Transaction",
+              "members": [
+                {
+                  "label": "to",
+                  "type": "t_address",
+                  "offset": 0,
+                  "slot": "0"
+                },
+                {
+                  "label": "value",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "1"
+                },
+                {
+                  "label": "data",
+                  "type": "t_bytes_storage",
+                  "offset": 0,
+                  "slot": "2"
+                },
+                {
+                  "label": "executed",
+                  "type": "t_bool",
+                  "offset": 0,
+                  "slot": "3"
+                },
+                {
+                  "label": "numConfirmations",
+                  "type": "t_uint256",
+                  "offset": 0,
+                  "slot": "4"
+                }
+              ],
+              "numberOfBytes": "160"
+            },
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.7.3"
+      },
+      "contracts/TestTransaction.sol:TestContract": {
+        "src": "contracts/TestTransaction.sol:5",
+        "version": {
+          "withMetadata": "80331c3acb6cbbff5c98ef9272f6784e23ebc3f52f8b7f852956e21a7b3da0ab",
+          "withoutMetadata": "d476e52129a60e8b24edbd2fe58affe7c4cffa05d744e753d7a62a6e7fc9baea",
+          "linkedWithoutMetadata": "d476e52129a60e8b24edbd2fe58affe7c4cffa05d744e753d7a62a6e7fc9baea"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "callMe(uint256)",
+          "getData()"
+        ],
+        "linkReferences": [],
+        "errors": [],
+        "layout": {
+          "storage": [
+            {
+              "label": "i",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_uint256",
+              "contract": "TestContract",
+              "src": "contracts/TestTransaction.sol:6"
+            }
+          ],
+          "types": {
+            "t_uint256": {
+              "label": "uint256",
+              "numberOfBytes": "32"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.7.3"
+      },
+      "contracts/Wallet.sol:Wallet": {
+        "src": "contracts/Wallet.sol:5",
+        "version": {
+          "withMetadata": "d79c86f2e4d8bcd1f07d0c2f814e080dca36bf48b19e252afd9fae64adcfa909",
+          "withoutMetadata": "edfe95362f2861cc55ad39e9f179d2f5d9818833d8f104c6635b248e2f4321bf",
+          "linkedWithoutMetadata": "edfe95362f2861cc55ad39e9f179d2f5d9818833d8f104c6635b248e2f4321bf"
+        },
+        "inherit": [],
+        "libraries": [],
+        "methods": [
+          "()",
+          "()",
+          "withdraw(uint256)",
+          "getBalance()"
+        ],
+        "linkReferences": [],
+        "errors": [
+          {
+            "kind": "constructor",
+            "contract": "Wallet",
+            "src": "contracts/Wallet.sol:8"
+          }
+        ],
+        "layout": {
+          "storage": [
+            {
+              "label": "owner",
+              "offset": 0,
+              "slot": "0",
+              "type": "t_address_payable",
+              "contract": "Wallet",
+              "src": "contracts/Wallet.sol:6"
+            }
+          ],
+          "types": {
+            "t_address_payable": {
+              "label": "address payable",
+              "numberOfBytes": "20"
+            }
+          },
+          "layoutVersion": "1.2",
+          "flat": true
+        },
+        "solcVersion": "0.7.3"
+      }
+    },
+    {
       "contracts/HelloWorld.sol:HelloWorld": {
         "src": "contracts/HelloWorld.sol:5",
         "version": {
