@@ -6,7 +6,7 @@
       "contentHash": "9de718f5dbe9caeeab6638f67d16a843",
       "sourceName": "contracts/HelloWorld.sol",
       "solcConfig": {
-        "version": "0.7.3",
+        "version": "0.8.10",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -38,11 +38,11 @@
       ]
     },
     "/Users/will/work-projects/stabiliti/multi-sig-wallet-poc/contracts/MultiSigWallet.sol": {
-      "lastModificationDate": 1687510425366,
-      "contentHash": "e6204aa1f642c1d9a6ac0249bc3cf7bd",
+      "lastModificationDate": 1688656838002,
+      "contentHash": "459c5cf6984c62658a49f4d26a1aabad",
       "sourceName": "contracts/MultiSigWallet.sol",
       "solcConfig": {
-        "version": "0.7.3",
+        "version": "0.8.10",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -78,7 +78,7 @@
       "contentHash": "5068c948fa3bc84743cfe988b56a7052",
       "sourceName": "contracts/TestTransaction.sol",
       "solcConfig": {
-        "version": "0.7.3",
+        "version": "0.8.10",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -114,7 +114,7 @@
       "contentHash": "7f47fe1dc55e7a56c497ac76c9ca67e4",
       "sourceName": "contracts/Wallet.sol",
       "solcConfig": {
-        "version": "0.7.3",
+        "version": "0.8.10",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -143,6 +143,42 @@
       ],
       "artifacts": [
         "Wallet"
+      ]
+    },
+    "/Users/will/work-projects/stabiliti/multi-sig-wallet-poc/contracts/MultiSig.sol": {
+      "lastModificationDate": 1690563516884,
+      "contentHash": "ee0b7fa40fd1d56db9c4cffe55a5d7cd",
+      "sourceName": "contracts/MultiSig.sol",
+      "solcConfig": {
+        "version": "0.8.10",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata",
+                "storageLayout"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.10"
+      ],
+      "artifacts": [
+        "MultiSig"
       ]
     }
   }

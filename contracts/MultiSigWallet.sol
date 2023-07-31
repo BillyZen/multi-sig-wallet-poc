@@ -53,9 +53,9 @@ contract MultiSigWallet {
     }
 
     constructor(address[] memory _owners, uint _numConfirmationsRequired) {
-        require(_owners.length > 0, "owners required");
+        require(_owners.length > 1, "owners required");
         require(
-            _numConfirmationsRequired > 0 &&
+            _numConfirmationsRequired > 1 &&
                 _numConfirmationsRequired <= _owners.length,
             "invalid number of required confirmations"
         );

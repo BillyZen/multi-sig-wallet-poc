@@ -1,13 +1,13 @@
 const { ethers } = require("hardhat");
+// const TEST_ACCOUNT_1 = process.env.TEST_ACCOUNT_1;
+const TEST_ACCOUNT_2 = process.env.TEST_ACCOUNT_2;
+const TEST_ACCOUNT_3 = process.env.TEST_ACCOUNT_3;
 
 async function main() {
-  const MultiSigWallet = await ethers.getContractFactory("MultiSigWallet");
+  const MultiSigWallet = await ethers.getContractFactory("MultiSig");
 
   const multi_sig_wallet = await MultiSigWallet.deploy(
-    [
-      "0x1D7F6E0FC483198caD49D6c2C560b48c9e825d2e",
-      "0xa428434AAd9455C2859eD018eD0C03f504A9431d",
-    ],
+    [TEST_ACCOUNT_2, TEST_ACCOUNT_3],
     2
   );
   console.log("Contract deployed to address: ", multi_sig_wallet.address);
